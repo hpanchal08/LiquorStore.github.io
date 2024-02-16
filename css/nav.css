@@ -1,0 +1,76 @@
+* {
+}
+
+ 
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333; /* Adjust the color as needed */
+}
+
+.nav-brand img {
+    height: 70px;
+    padding-left: 20px;
+}
+
+.nav-links {
+    display: flex;
+}
+
+.nav-item, .dropbtn {
+    color: white;
+    padding: 40px;
+    text-decoration: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 50px;
+        text-decoration: none;
+        display: block;
+    }
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.nav-search input[type="search"], .nav-search button {
+    padding: 15px 30px;
+}
+
+.nav-search button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-account a {
+    color: white;
+    text-decoration: none;
+    padding: 30px;
+}
+
+    .nav-account a:not(:last-child) {
+        border-right: 1px solid #fff; /* Adds the divider line */
+    }
+
+    .nav-account a:last-child {
+        margin-left: 10px;
+    }

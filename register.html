@@ -1,0 +1,203 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width,
+						initial-scale=1.0">
+    <title>Register & Sign IN</title>
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/register.css">
+    <link rel="stylesheet" href="css/index.css">
+
+</head>
+
+<body>
+
+
+
+    <!-- Navigation start-->
+    <nav class="navbar">
+        <div class="nav-brand">
+            <a href="/"><img src="img/logo.png" alt="DrinkVibe Logo" class="logo"></a>
+        </div>
+        <div class="nav-links">
+            <a href="index.html" class="nav-item">Spirits</a>
+            <div class="dropdown">
+                <button class="dropbtn">Rare Spirits</button>
+                <div class="dropdown-content">
+                    <!-- Dropdown links -->
+                    <a href="">Link 1 </a>
+                    <a href="#">Link 2</a>
+                    <!-- Add more links as needed -->
+                </div>
+            </div>
+            <!-- Repeat for other dropdowns -->
+            <div class="dropdown">
+                <button class="dropbtn">Shots</button>
+                <div class="dropdown-content">
+                    <!-- Dropdown links -->
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <!-- Add more links as needed -->
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropbtn">Wine</button>
+                <div class="dropdown-content">
+                    <!-- Dropdown links -->
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <!-- Add more links as needed -->
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Craft Beer</button>
+                <div class="dropdown-content">
+                    <!-- Dropdown links -->
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <!-- Add more links as needed -->
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Snacks</button>
+                <div class="dropdown-content">
+                    <!-- Dropdown links -->
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <!-- Add more links as needed -->
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Product Type</button>
+                <div class="dropdown-content">
+                    <!-- Dropdown links -->
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <!-- Add more links as needed -->
+                </div>
+            </div>
+            <!-- ... -->
+        </div>
+
+        <div class="nav-search">
+            <input type="search" placeholder="Search">
+            <button type="submit"><i class="search-icon">🔍</i></button>
+        </div>
+        <div class="nav-account">
+            <a href="register.html">Sign In </a>
+            <a href="register.html">Create an Account</a>
+            <a href="/cart">Cart: 0 items</a>
+        </div>
+    </nav>
+
+    <header>
+        <h1 class="heading">Welcome to Express Mart</h1>
+        <h3 class="title">Sliding Login & Registration Form</h3>
+    </header>
+
+    <div class="container1">
+        <input id="signin" type="radio" name="tab" checked="checked" />
+        <input id="register" type="radio" name="tab" />
+        <div class="pages">
+            <div class="page">
+                <h3 class="title">
+                    Sign-in Information
+                </h3>
+
+                <div class="input">
+
+                    <div class="title"><i class="material-icons"> </i> USERNAME</div>
+                    <input class="text" type="text" placeholder="" />
+                </div>
+                <div class="input">
+                    <div class="title"><i class="material-icons"> </i> PASSWORD</div>
+                    <input class="text" type="password" placeholder="" />
+                </div>
+                <div class="input">
+                    <input type="submit" value="ENTER" />
+                </div>
+            </div>
+            <div class="page signup">
+                
+                <h3 class="title">   Personal Information</h3>
+
+                <div class="input">
+                    <div class="title"><i class="material-icons"> </i> NAME</div>
+                    <input class="text" type="text" placeholder="" />
+                </div>
+                <div class="input">
+                    <div class="title"><i class="material-icons"> </i> EMAIL</div>
+                    <input class="text" type="password" placeholder="" />
+                </div>
+                <div class="input">
+                    <input type="submit" value="SIGN ME UP!" />
+                </div>
+            </div>
+        </div>
+        <div class="tabs">
+            <label class="tab text" for="signin">
+                Sign In
+            </label>
+            <label class="tab text" for="register">
+                Register
+            </label>
+        </div>
+    </div>
+    <!-- JavaScript -->
+    <script src="js/index.js"></script>
+
+    <!-- Footer Start-->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>company</h4>
+                    <ul>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">our services</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                        <li><a href="#">affiliate program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">shipping</a></li>
+                        <li><a href="#">returns</a></li>
+                        <li><a href="#">order status</a></li>
+                        <li><a href="#">payment options</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>online shop</h4>
+                    <ul>
+                        <li><a href="#">watch</a></li>
+                        <li><a href="#">bag</a></li>
+                        <li><a href="#">shoes</a></li>
+                        <li><a href="#">dress</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+</body>
+</html>

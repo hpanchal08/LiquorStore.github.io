@@ -1,0 +1,274 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Express Mart</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/register.css">
+
+
+</head>
+<body>
+
+    <!-- Navigation start-->
+    <nav class="navbar">
+        <div class="nav-brand">
+            <a href="/"><img src="img/logo.png" alt="DrinkVibe Logo" class="logo"></a>
+        </div>
+        <div class="nav-links">
+            <a href="/spirits" class="nav-item">Spirits</a>
+            <div class="dropdown">
+                <button class="dropbtn">Rare Spirits</button>
+                <div class="dropdown-content">
+                    <!-- Dropdown links -->
+                    <a href="Rare_Spirits.html">Grappa  </a>
+                    <a href="#">Link 2</a>
+                    <!-- Add more links as needed -->
+                </div>
+            </div>
+            <!-- Repeat for other dropdowns -->
+            <div class="dropdown">
+                <button class="dropbtn">Shots</button>
+                <div class="dropdown-content">
+                    <!-- Dropdown links -->
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <!-- Add more links as needed -->
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropbtn">Wine</button>
+                <div class="dropdown-content">
+                    <!-- Dropdown links -->
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <!-- Add more links as needed -->
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Craft Beer</button>
+                <div class="dropdown-content">
+                    <!-- Dropdown links -->
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <!-- Add more links as needed -->
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Snacks</button>
+                <div class="dropdown-content">
+                    <!-- Dropdown links -->
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <!-- Add more links as needed -->
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Product Type</button>
+                <div class="dropdown-content">
+                    <!-- Dropdown links -->
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <!-- Add more links as needed -->
+                </div>
+            </div>
+            <!-- ... -->
+        </div>
+        <div class="nav-search">
+            <input type="search" placeholder="Search">
+            <button type="submit"><i class="search-icon">🔍</i></button>
+        </div>
+        <div class="nav-account">
+            <a href="register.html">Sign In </a>
+            <a href="register.html">Create an Account</a>
+            <a href="/cart">Cart: 0 items</a>
+        </div>
+    </nav>
+
+    <!-- Navigation End-->
+    <!-- 3 pic grid start -->
+
+
+    <div class="grid-container">
+        <div class="item1">
+            <img src="img/wiskey.png" alt="Whiskey" style="width: 100%; height: 80%;">
+        </div>
+
+        <div class="item2">
+            <img src="img/1926.png" alt="Whiskey" style="width: 50%; height: 40%;">
+            <img src="img/Horsebox-Whiskey-281.png" alt="Whiskey" style="width: 50%; height: 40%;">
+
+        </div>
+
+    </div>
+
+    <!-- 3 pic grid End -->
+    <!-- Tab -->
+    <div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'Whisky')">Whisky</button>
+        <button class="tablinks" onclick="openTab(event, 'Champagne')">Champagne</button>
+        <button class="tablinks" onclick="openTab(event, 'Gin')">Gin</button>
+    </div>
+
+    <!-- Tab content -->
+    <div id="Whisky" class="tabcontent">
+        <div class="product-grid">
+            <!-- Product items for Whisky -->
+            <div class="product-card sale">
+                <img src="img/corona.png" alt="Product 5">
+                <h3>Product Name 5</h3>
+                <p class="price">$XX.XX</p>
+                <button class="add-to-cart">add to cart</button>
+            </div>
+
+            <div class="product-card sale">
+                <img src="img/wiskey.png" alt="Product 4">
+                <h3>Product Name 4</h3>
+                <p class="price">$XX.XX</p>
+                <button class="add-to-cart">add to cart</button>
+            </div>
+            <div class="product-card sale">
+                <img src="img/wiskey.png" alt="Product 4">
+                <h3>Product Name 4</h3>
+                <p class="price">$XX.XX</p>
+                <button class="add-to-cart">add to cart</button>
+            </div>
+        </div>
+    </div>
+
+        <div id="Champagne" class="tabcontent">
+            <!-- Product items for Champagne -->
+            <div class="product-card sale">
+                <img src="img/Johnnie.jpeg" alt="Johnnie Walker Green Label">
+                <h3>Johnnie Walker Green Label Blended Scotch Whisky</h3>
+                <p class="price">$21.00</p>
+                <button class="add-to-cart">add to cart</button>
+            </div>
+        </div>
+
+        <div id="Gin" class="tabcontent">
+            <!-- Product items for Gin -->
+            <div class="product-card sale">
+                <img src="img/wiskey.png" alt="Product 4">
+                <h3>Product Name 4</h3>
+                <p class="price">$XX.XX</p>
+                <button class="add-to-cart">add to cart</button>
+            </div>
+        </div>
+     
+        <!--/ tabs -->
+        <!-- tab end -->
+        <!-- DataGrid for photo and add to cart-->
+        <div class="product-grid">
+            <div class="product-card sale">
+                <img src="img/Johnnie.jpeg" alt="Johnnie Walker Green Label">
+                <h3>Johnnie Walker Green Label Blended Scotch Whisky</h3>
+                <p class="price">$21.00</p>
+                <button class="add-to-cart">add to cart</button>
+            </div>
+
+
+            <div class="product-card sale">
+                <img src="img/jame.png" alt="Product 2">
+                <h3>Product Name 2</h3>
+                <p class="price">$XX.XX</p>
+                <button class="add-to-cart">add to cart</button>
+            </div>
+            <div class="product-card sale">
+                <img src="img/1926.png" alt="Product 3">
+                <h3>Product Name 3</h3>
+                <p class="price">$XX.XX</p>
+                <button class="add-to-cart">add to cart</button>
+            </div>
+            <div class="product-card sale">
+                <img src="img/wiskey.png" alt="Product 4">
+                <h3>Product Name 4</h3>
+                <p class="price">$XX.XX</p>
+                <button class="add-to-cart">add to cart</button>
+            </div>
+            <div class="product-card sale">
+                <img src="img/corona.png" alt="Product 5">
+                <h3>Product Name 5</h3>
+                <p class="price">$XX.XX</p>
+                <button class="add-to-cart">add to cart</button>
+            </div>
+        </div>
+
+        <!-- Footer Start-->
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>company</h4>
+                        <ul>
+                            <li><a href="#">about us</a></li>
+                            <li><a href="#">our services</a></li>
+                            <li><a href="#">privacy policy</a></li>
+                            <li><a href="#">affiliate program</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>get help</h4>
+                        <ul>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">shipping</a></li>
+                            <li><a href="#">returns</a></li>
+                            <li><a href="#">order status</a></li>
+                            <li><a href="#">payment options</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>online shop</h4>
+                        <ul>
+                            <li><a href="#">watch</a></li>
+                            <li><a href="#">bag</a></li>
+                            <li><a href="#">shoes</a></li>
+                            <li><a href="#">dress</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>follow us</h4>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Footer End-->
+
+        <script>
+            function openTab(evt, categoryName) {
+                // Declare all variables
+                var i, tabcontent, tablinks;
+
+                // Get all elements with class="tabcontent" and hide them
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+
+                // Get all elements with class="tablinks" and remove the class "active"
+                tablinks = document.getElementsByClassName("tablinks");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+
+                // Show the current tab, and add an "active" class to the button that opened the tab
+                document.getElementById(categoryName).style.display = "block";
+                evt.currentTarget.className += " active";
+            }
+        </script>
+
+
+</body>
+</html>
